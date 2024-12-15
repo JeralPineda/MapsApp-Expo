@@ -13,7 +13,7 @@ interface PermissionsState {
   checkLocationPermissions: () => Promise<PermissionStatus>;
 }
 
-export const usePermissions = create<PermissionsState>((set) => ({
+export const usePermissionsStore = create<PermissionsState>((set) => ({
   locationStatus: PermissionStatus.CHECKING,
 
   requestLocationPermissions: async () => {
